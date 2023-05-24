@@ -1,7 +1,10 @@
-from pessoa import Pessoa
+from banco import ContaBancaria
 
-p1 = Pessoa("Luiz", 39)
-p1.comer('lasanha')
+conta1 = ContaBancaria("corrente", "anna", "899", 1500,1000)
 
-p2 = Pessoa("Anna",19)
-p2.comer('maçã')
+conta1.depositar(10)
+conta1.verificar_saldo()
+
+conta1.sacar(300)
+conta1.verificar_saldo()
+
